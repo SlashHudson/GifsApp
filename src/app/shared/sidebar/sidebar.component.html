@@ -1,0 +1,12 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light text-align">Gifs-App</h3>
+    <hr class="text-light">
+
+    <div class="list-group list-reset">
+        <h5 class="text-light ">Historial:</h5>
+        
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let entrada of historial" (click)="buscar( entrada )" >{{entrada | titlecase}} </a>
+    </div>
+    <hr class="text-light">
+    <button (click)="borrar()" class="centrar-texto">Borrar</button>
+</div>
